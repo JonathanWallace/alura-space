@@ -28,9 +28,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '192.168.0.18'
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -57,7 +55,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'setup.urls'
 
-print(BASE_DIR)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
